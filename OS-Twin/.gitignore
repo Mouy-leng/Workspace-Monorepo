@@ -1,0 +1,23 @@
+# OS-Twin .gitignore
+
+# Build artifacts
+build/
+dist/
+*.exe
+*.dll
+
+# Configuration
+config/local.json
+*.local.json
+
+# Logs
+logs/
+*.log
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
