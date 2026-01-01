@@ -33,8 +33,38 @@ This repository is hosted on GitHub:
 - **Repository**: https://github.com/Mouy-leng/Workspace-Monorepo
 - **Description**: Huawei-Window-Techno - Consolidated monorepo containing all workspace projects
 
+## Development Setup
+
+### Quick Start
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/Mouy-leng/Workspace-Monorepo.git
+   cd Workspace-Monorepo
+   ```
+
+2. **Run setup script**
+   ```powershell
+   .\scripts\setup.ps1
+   ```
+
+3. **Read the guides**
+   - [CONTRIBUTING.md](CONTRIBUTING.md) - How to contribute
+   - [DEVELOPMENT.md](DEVELOPMENT.md) - Development workflow
+
+## Features
+
+✅ **CI/CD Pipeline** - Automated testing and validation via GitHub Actions  
+✅ **Branch Protection** - Protected main branch with required reviews  
+✅ **Issue Templates** - Structured bug reports and feature requests  
+✅ **PR Templates** - Standardized pull request format  
+✅ **Development Scripts** - Setup and project initialization tools  
+
 ## Next Steps
 
 1. ✅ Repository created and pushed to GitHub
-2. Review the repository: https://github.com/Mouy-leng/Workspace-Monorepo
-3. Continue development in respective subdirectories
+2. ✅ CI/CD workflows configured
+3. ✅ Branch protection enabled
+4. ✅ Documentation complete
+5. Review the repository: https://github.com/Mouy-leng/Workspace-Monorepo
+6. Continue development in respective subdirectories
