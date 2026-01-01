@@ -27,8 +27,14 @@ Each project maintains its original structure and can be worked on independently
 
 The merge preserved the commit history where available. Use `git log --all --graph` to view the complete history.
 
+## GitHub Repository
+
+This repository is hosted on GitHub:
+- **Repository**: https://github.com/Mouy-leng/Workspace-Monorepo
+- **Description**: Huawei-Window-Techno - Consolidated monorepo containing all workspace projects
+
 ## Next Steps
 
-1. Review the merged repository structure
-2. Add a remote if needed: `git remote add origin <your-repo-url>`
-3. Push to remote: `git push -u origin main`
+1. ✅ Repository created and pushed to GitHub
+2. Review the repository: https://github.com/Mouy-leng/Workspace-Monorepo
+3. Continue development in respective subdirectories
