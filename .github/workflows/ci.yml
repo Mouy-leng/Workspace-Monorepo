@@ -1,0 +1,60 @@
+name: CI
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main, develop ]
+
+jobs:
+  lint:
+    name: Lint and Validate
+    runs-on: windows-latest
+    
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+    
+    - name: Check PowerShell scripts
+      shell: pwsh
+      run: |
+        Get-ChildItem -Recurse -Filter "*.ps1" | ForEach-Object {
+          Write-Host "Checking: $($_.FullName)"
+          $content = Get-Content $_.FullName -Raw
+          if ($content -match "TODO|FIXME|XXX") {
+            Write-Warning "Found TODO/FIXME in $($_.Name)"
+          }
+        }
+    
+    - name: Validate file structure
+      shell: pwsh
+      run: |
+        $requiredDirs = @("DomainController", "MQL5-Google-Onedrive", "OS-Twin", "OS-Twin-setup", "AgentBrain")
+        foreach ($dir in $requiredDirs) {
+          if (Test-Path $dir) {
+            Write-Host "✅ $dir exists"
+          } else {
+            Write-Warning "⚠️ $dir missing"
+          }
+        }
+
+  build:
+    name: Build Check
+    runs-on: windows-latest
+    needs: lint
+    
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Check repository structure
+      shell: pwsh
+      run: |
+        Write-Host "Repository structure:"
+        Get-ChildItem -Directory | ForEach-Object {
+          $fileCount = (Get-ChildItem -Path $_.FullName -Recurse -File -ErrorAction SilentlyContinue).Count
+          Write-Host "  $($_.Name): $fileCount files"
+        }
