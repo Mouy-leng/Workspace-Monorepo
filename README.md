@@ -1,29 +1,34 @@
 # Workspace Monorepo
 
-This is a consolidated monorepo containing all projects from the workspace.
+This is a monorepo containing all workspace projects and repositories merged into a single repository.
 
 ## Structure
 
-- **DomainController/** - Domain controller scripts and configurations (21 files imported)
-- **MQL5-Google-Onedrive/** - MQL5 Google Onedrive integration (empty repository - ready for future use)
-- **OS-Twin/** - OS-Twin project (empty - ready for future use)
-- **OS-Twin-setup/** - OS-Twin setup scripts (empty - ready for future use)
-- **AgentBrain/** - AgentBrain project (empty - ready for future use)
+- **DomainController/** - Domain controller scripts, configurations, and automation tools
+- **MQL5-Google-Onedrive/** - MQL5 Google OneDrive integration (empty repository - cloned from GitHub)
+- **OS-Twin/** - OS-Twin project (empty repository - cloned from GitHub)
+- **OS-Twin-setup/** - OS-Twin setup scripts (empty directory)
+- **AgentBrain/** - AgentBrain project (empty directory)
 
-## Repository History
+## History
 
-This monorepo was created by merging multiple repositories. DomainController was successfully imported with all its files. Other directories exist as placeholders for future projects.
+This monorepo was created by merging multiple repositories and directories:
+- **DomainController** - Local project with scripts and configurations
+- **MQL5-Google-Onedrive** - From https://github.com/A6-9V/MQL5-Google-Onedrive.git (empty repo)
+- **OS-Twin** - From https://github.com/OS-Twin/OS-Twin.git (empty repo)
+- **OS-Twin-setup** - Setup directory
+- **AgentBrain** - Local project directory
 
 ## Usage
 
-Each subdirectory maintains its original structure and can be worked on independently.
+Each project maintains its original structure and can be worked on independently within this monorepo.
 
-## Merge Summary
+## Git History
 
-- ✅ **DomainController**: Successfully imported with 21 files
-- ⚠️ **MQL5-Google-Onedrive**: Empty git repository (no commits yet)
-- ⚠️ **OS-Twin**: Empty directory (not a git repository)
-- ⚠️ **OS-Twin-setup**: Empty directory (not a git repository)
-- ⚠️ **AgentBrain**: Empty directory
+The merge preserved the commit history where available. Use `git log --all --graph` to view the complete history.
 
-Created: 2026-01-02 00:53:30
+## Next Steps
+
+1. Review the merged repository structure
+2. Add a remote if needed: `git remote add origin <your-repo-url>`
+3. Push to remote: `git push -u origin main`
