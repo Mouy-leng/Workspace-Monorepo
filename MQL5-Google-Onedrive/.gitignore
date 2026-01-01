@@ -1,0 +1,20 @@
+# MQL5-Google-Onedrive .gitignore
+
+# Compiled files
+*.ex5
+*.ex4
+*.mq5.bak
+*.mqh.bak
+
+# MQL5 cache
+*.log
+*.tst
+
+# IDE
+*.suo
+*.user
+
+# Credentials
+credentials.json
+config.json
+*.key
