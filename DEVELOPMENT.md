@@ -10,7 +10,19 @@
    cd Workspace-Monorepo
    ```
 
-2. **Verify setup**
+2. **Run full setup**
+   
+   For **Linux/Mac**:
+   ```bash
+   bash scripts/full-setup.sh
+   ```
+   
+   For **Windows** (PowerShell):
+   ```powershell
+   .\scripts\setup.ps1
+   ```
+
+3. **Verify setup**
    ```bash
    git status
    git remote -v
@@ -21,7 +33,7 @@
 ### Required Tools
 
 - **Git** - Version control
-- **PowerShell 5.1+** - For Windows automation scripts
+- **Bash 4.0+** or **PowerShell 5.1+** - For automation scripts
 - **Python 3.11+** - For Python projects (if applicable)
 - **VS Code** (recommended) - Code editor
 

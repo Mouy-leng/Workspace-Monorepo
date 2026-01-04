@@ -31,16 +31,25 @@ git branch
 - Branches: `main`, `develop`
 
 ### Step 2: Run Setup Script
+
+**For Linux/Mac:**
+```bash
+bash scripts/full-setup.sh
+```
+
+**For Windows (PowerShell):**
 ```powershell
 .\scripts\setup.ps1
 ```
 
 This will:
 - ✅ Check Git installation
-- ✅ Verify PowerShell version
+- ✅ Verify shell version (Bash/PowerShell)
 - ✅ Configure Git user (if needed)
 - ✅ Verify remote configuration
 - ✅ Check repository structure
+- ✅ Initialize all project directories
+- ✅ Create configuration templates
 
 ### Step 3: Choose a Project
 

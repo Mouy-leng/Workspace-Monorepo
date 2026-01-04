@@ -1,7 +1,7 @@
 # OS-Twin Configuration
 
 [Storage]
-BackupLocation=C:\OS-Twin\Backups
+BackupLocation=/var/lib/os-twin/backups
 CompressionLevel=6
 MaxStorageSize=107374182400
 
