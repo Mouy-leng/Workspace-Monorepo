@@ -44,6 +44,13 @@ This repository is hosted on GitHub:
    ```
 
 2. **Run setup script**
+   
+   For **Linux/Mac**:
+   ```bash
+   bash scripts/full-setup.sh
+   ```
+   
+   For **Windows** (PowerShell):
    ```powershell
    .\scripts\setup.ps1
    ```
